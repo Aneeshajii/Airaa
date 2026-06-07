@@ -1,7 +1,10 @@
 import { ArrowRight, Star, ShieldCheck, Sparkles, Users } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -57,44 +60,75 @@ export default function Home() {
         </div>
         
         <div className="services-grid-desktop">
-          <div className="service-card">
+          <div className="service-card" onClick={() => navigate('/services?category=women-hair')} style={{cursor: 'pointer'}}>
             <div className="service-img-wrapper">
               <img src="/assets/Hairdressing.png" alt="Hair Services" onError={(e) => { e.target.src='https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=400&q=80'; }} />
             </div>
             <div className="service-info">
-              <h3>Hair Services</h3>
-              <p>20+ Services</p>
+               <h3>Hair Services</h3>
+               <p>30+ Services</p>
             </div>
           </div>
           
-          <div className="service-card">
+          <div className="service-card" onClick={() => navigate('/services?category=skin')} style={{cursor: 'pointer'}}>
             <div className="service-img-wrapper">
               <img src="/assets/skincare.png" alt="Skin Services" onError={(e) => { e.target.src='https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80'; }} />
             </div>
             <div className="service-info">
               <h3>Skin Services</h3>
-              <p>15+ Services</p>
+              <p>18+ Services</p>
             </div>
           </div>
           
-          <div className="service-card">
+          <div className="service-card" onClick={() => navigate('/services?category=bridal')} style={{cursor: 'pointer'}}>
             <div className="service-img-wrapper">
               <img src="/assets/hero.png" alt="Bridal Services" onError={(e) => { e.target.src='https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=400&q=80'; }} />
             </div>
             <div className="service-info">
               <h3>Bridal Services</h3>
-              <p>10+ Services</p>
+              <p>Premium Packages</p>
             </div>
           </div>
           
-          <div className="service-card desktop-extra-card">
+          <div className="service-card" onClick={() => navigate('/services?category=makeup')} style={{cursor: 'pointer'}}>
              <div className="service-img-wrapper">
-              <img src="/assets/gallery-3.jpg" alt="Makeup Services" onError={(e) => { e.target.src='https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=400&q=80'; }} />
+              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=400&q=80" alt="Makeup Services" />
             </div>
             <div className="service-info">
               <h3>Makeup Services</h3>
-              <p>12+ Services</p>
+              <p>Party & Event Makeup</p>
             </div>
+          </div>
+
+          <div className="service-card" onClick={() => navigate('/services?category=waxing')} style={{cursor: 'pointer'}}>
+             <div className="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=400&q=80" alt="Waxing Services" />
+            </div>
+            <div className="service-info">
+              <h3>Waxing & Threading</h3>
+              <p>10+ Services</p>
+            </div>
+          </div>
+
+          <div className="service-card" onClick={() => navigate('/services?category=nail')} style={{cursor: 'pointer'}}>
+             <div className="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=400&q=80" alt="Nail Spa" />
+            </div>
+            <div className="service-info">
+              <h3>Nail Spa</h3>
+              <p>Manicure & Pedicure</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Airaa Section */}
+      <section className="why-choose-section content-wrapper">
+        <div className="why-choose-container">
+          <h2 className="why-choose-title font-serif text-gold">WHY CHOOSE<br/>AIRAA?</h2>
+          <div className="why-choose-quote">
+            <p>"At AIRAA Signature Salon, we believe every person deserves to feel beautiful, confident, and valued. From luxurious ambience and premium products to personalized care by skilled professionals, every detail is designed to give you a relaxing and unforgettable salon experience. Because at AIRAA, we don't just enhance your beauty - we celebrate it."</p>
+            <span className="quote-author text-gold">By, Sushmita Arjun</span>
           </div>
         </div>
       </section>

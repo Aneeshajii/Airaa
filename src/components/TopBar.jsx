@@ -14,9 +14,6 @@ export default function TopBar() {
   return (
     <header className="topbar">
       <div className="topbar-container content-wrapper">
-        <button className="icon-btn mobile-only">
-          <Menu size={24} color="var(--color-gold)" />
-        </button>
         
         <div className="logo-container">
           <img src="/assets/logo.jpg" alt="AIRAA" className="logo" 
@@ -39,9 +36,6 @@ export default function TopBar() {
         
         <div className="topbar-actions">
           <a href="tel:+918383961162" className="btn-primary desktop-only book-top-btn">Book Appointment</a>
-          <button className="icon-btn mobile-only">
-            <Bell size={24} color="var(--color-gold)" />
-          </button>
         </div>
       </div>
     </header>
