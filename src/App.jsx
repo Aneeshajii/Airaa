@@ -10,13 +10,12 @@ const Combos = React.lazy(() => import('./pages/Combos'));
 const Gallery = React.lazy(() => import('./pages/Gallery'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 
-// Premium, fluid page transition wrapper
+// Ultra-fast page transition wrapper
 const PageWrapper = ({ children }) => (
   <motion.div
-    initial={{ opacity: 0, y: 15 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -15 }}
-    transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1, transition: { duration: 0.2 } }}
+    exit={{ opacity: 0, transition: { duration: 0.05 } }}
     style={{ width: '100%', height: '100%' }}
   >
     {children}
