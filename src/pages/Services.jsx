@@ -4,13 +4,13 @@ import './Services.css';
 
 const CATEGORIES = [
   { id: 'women-hair', label: 'Women Hair', image: '/assets/Hairdressing.png' },
-  { id: 'men-hair', label: 'Men Hair', image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80' },
+  { id: 'men-hair', label: 'Men Hair', image: '/assets/menhair.png' },
   { id: 'bridal', label: 'Bridal', image: '/assets/hero.png' },
-  { id: 'makeup', label: 'Party Makeup', image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=80' },
+  { id: 'makeup', label: 'Party Makeup', image: '/assets/Party Makeup.png' },
   { id: 'skin', label: 'Skin Care', image: '/assets/skincare.png' },
-  { id: 'waxing', label: 'Waxing', image: 'https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=800&q=80' },
-  { id: 'threading', label: 'Threading', image: 'https://images.unsplash.com/photo-1512496015851-a1c848fe7182?auto=format&fit=crop&w=800&q=80' },
-  { id: 'nail', label: 'Nail Spa', image: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=80' }
+  { id: 'waxing', label: 'Waxing', image: '/assets/Waxing.png' },
+  { id: 'threading', label: 'Threading', image: '/assets/Threading.png' },
+  { id: 'nail', label: 'Nail Spa', image: '/assets/Nail Spa.png' }
 ];
 
 const SERVICES_DATA = {

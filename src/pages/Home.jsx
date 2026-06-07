@@ -1,4 +1,4 @@
-import { ArrowRight, Star, ShieldCheck, Sparkles, Users } from 'lucide-react';
+import { ArrowRight, Star, ShieldCheck, Sparkles, Users, MapPin, Phone, Clock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
@@ -92,7 +92,7 @@ export default function Home() {
           
           <div className="service-card" onClick={() => navigate('/services?category=makeup')} style={{cursor: 'pointer'}}>
              <div className="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=400&q=80" alt="Makeup Services" />
+              <img src="/assets/Party Makeup.png" alt="Makeup Services" onError={(e) => { e.target.src='https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=400&q=80'; }} />
             </div>
             <div className="service-info">
               <h3>Makeup Services</h3>
@@ -102,23 +102,25 @@ export default function Home() {
 
           <div className="service-card" onClick={() => navigate('/services?category=waxing')} style={{cursor: 'pointer'}}>
              <div className="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=400&q=80" alt="Waxing Services" />
+              <img src="/assets/Waxing.png" alt="Waxing Services" onError={(e) => { e.target.src='https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=400&q=80'; }} />
             </div>
             <div className="service-info">
-              <h3>Waxing & Threading</h3>
-              <p>10+ Services</p>
+              <h3>Waxing</h3>
+              <p>Premium Waxing</p>
             </div>
           </div>
 
-          <div className="service-card" onClick={() => navigate('/services?category=nail')} style={{cursor: 'pointer'}}>
+          <div className="service-card" onClick={() => navigate('/services?category=threading')} style={{cursor: 'pointer'}}>
              <div className="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=400&q=80" alt="Nail Spa" />
+              <img src="/assets/Threading.png" alt="Threading Services" onError={(e) => { e.target.src='https://images.unsplash.com/photo-1512496015851-a1c848fe7182?auto=format&fit=crop&w=400&q=80'; }} />
             </div>
             <div className="service-info">
-              <h3>Nail Spa</h3>
-              <p>Manicure & Pedicure</p>
+              <h3>Threading</h3>
+              <p>Eyebrow & Facial</p>
             </div>
           </div>
+
+
         </div>
       </section>
 
@@ -129,6 +131,30 @@ export default function Home() {
           <div className="why-choose-quote">
             <p>"At AIRAA Signature Salon, we believe every person deserves to feel beautiful, confident, and valued. From luxurious ambience and premium products to personalized care by skilled professionals, every detail is designed to give you a relaxing and unforgettable salon experience. Because at AIRAA, we don't just enhance your beauty - we celebrate it."</p>
             <span className="quote-author text-gold">By, Sushmita Arjun</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Mini Contact Section */}
+      <section className="home-mini-contact content-wrapper">
+        <div className="section-header">
+          <h2>Visit Airaa Signature Salon</h2>
+        </div>
+        <div className="mini-contact-grid">
+          <div className="mini-contact-card">
+            <MapPin size={24} className="text-gold" />
+            <h3>Location</h3>
+            <p>Enchakkal Junction, Opp Bank of Baroda,<br/>Trivandrum, Kerala 695024</p>
+          </div>
+          <div className="mini-contact-card">
+            <Phone size={24} className="text-gold" />
+            <h3>Contact</h3>
+            <p>+91 8383961162<br/>+91 9977345868</p>
+          </div>
+          <div className="mini-contact-card">
+            <Clock size={24} className="text-gold" />
+            <h3>Hours</h3>
+            <p>Monday - Sunday<br/>10:00 AM - 08:00 PM</p>
           </div>
         </div>
       </section>

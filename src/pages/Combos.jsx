@@ -13,19 +13,19 @@ const LADIES_COMBOS = [
     title: 'Ladies Combo 1',
     services: ['Eyebrows', 'Upperlip', 'D-Tan (Face & Neck)', 'Basic Haircut'],
     price: 499,
-    image: '/assets/gallery-1.jpg'
+    image: '/assets/combo1.png'
   },
   {
     title: 'Ladies Combo 2',
     services: ['Basic Haircut', 'Eyebrow', 'Facial', 'Threading'],
     price: 999,
-    image: '/assets/skincare.png'
+    image: '/assets/combo2.png'
   },
   {
     title: 'Ladies Combo 3',
     services: ['Full Hand Waxing', 'Underarm Waxing', 'Full Leg Waxing'],
     price: 1299,
-    image: '/assets/gallery-2.jpg'
+    image: '/assets/combo3.png'
   }
 ];
 
@@ -34,19 +34,19 @@ const GENTS_COMBOS = [
     title: 'Gents Combo 1',
     services: ['Basic Haircut', 'Beard Trim', 'D-Tan'],
     price: 299,
-    image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80'
+    image: '/assets/combo1.png'
   },
   {
     title: 'Gents Combo 2',
     services: ['Basic Haircut', 'Beard Trim', 'D-Tan', 'Head Massage'],
     price: 799,
-    image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80'
+    image: '/assets/combo2.png'
   },
   {
     title: 'Gents Combo 3',
     services: ['Basic Haircut', 'Hair Spa', 'D-Tan', 'Beard Trim'],
     price: 999,
-    image: 'https://images.unsplash.com/photo-1593702288056-ccbfcb005f33?auto=format&fit=crop&w=600&q=80'
+    image: '/assets/combo3.png'
   }
 ];
 

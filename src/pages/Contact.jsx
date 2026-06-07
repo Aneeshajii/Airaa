@@ -24,7 +24,7 @@ export default function Contact() {
     <div className="contact-premium-page">
       {/* Top Banner with Quote */}
       <div className="contact-hero">
-        <img src="/assets/gallery-6.jpg" alt="Salon Ambiance" className="contact-hero-bg" onError={(e) => { e.target.src='https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80'; }} />
+        <img src="/assets/airaa.jpg" alt="Salon Ambiance" className="contact-hero-bg" onError={(e) => { e.target.src='https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80'; }} />
         <div className="contact-hero-overlay"></div>
         <div className="contact-quote-container content-wrapper">
           <Quote size={40} className="quote-mark" />
