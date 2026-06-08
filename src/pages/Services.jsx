@@ -57,6 +57,7 @@ const SERVICES_DATA = {
     { name: 'Gold Facial', price: '₹1800' },
     { name: 'Whitening Facial', price: '₹1800' },
     { name: 'Anti-Ageing Facial', price: '₹1600' },
+    { name: 'Anti-Acne Facial', price: '₹1600' },
     { name: 'Platinum Facial', price: '₹1700' },
     { name: 'Aroma Skin Glow Facial', price: '₹1300' },
     { name: 'Vitamin-C Facial', price: '₹2800' },

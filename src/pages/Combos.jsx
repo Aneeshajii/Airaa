@@ -34,19 +34,19 @@ const GENTS_COMBOS = [
     title: 'Gents Combo 1',
     services: ['Basic Haircut', 'Beard Trim', 'D-Tan'],
     price: 299,
-    image: '/assets/combo1.png'
+    image: '/assets/gentcombo1.png'
   },
   {
     title: 'Gents Combo 2',
     services: ['Basic Haircut', 'Beard Trim', 'D-Tan', 'Head Massage'],
     price: 799,
-    image: '/assets/combo2.png'
+    image: '/assets/gentcombo2.png'
   },
   {
     title: 'Gents Combo 3',
     services: ['Basic Haircut', 'Hair Spa', 'D-Tan', 'Beard Trim'],
     price: 999,
-    image: '/assets/combo3.png'
+    image: '/assets/gentcombo3.png'
   }
 ];
 
